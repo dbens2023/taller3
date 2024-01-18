@@ -1,0 +1,30 @@
+GET  http://localhost:8000/dog/buscar/1 HTTP/1.1
+
+###
+GET  http://localhost:8000/dog/buscar HTTP/1.1
+
+###
+POST http://localhost:8000/dog/crear HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "manba",
+    "edad": 1,
+    "razar": "pastos alemann",
+}
+
+###
+
+PUT http://localhost:8000/dog/actualizar/1 HTTP/1.1
+Content-Type: application/json
+
+{
+   "nombre":"manba",
+    "edad":10,
+    "raza":"pastor aleman"
+}
+
+
+###
+DELETE http://localhost:dog/perros/eliminar/1 HTTP/1.1
+
